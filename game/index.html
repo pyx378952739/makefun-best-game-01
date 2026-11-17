@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEON VOID — survive the swarm</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #05050f;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #game {
+    display: block;
+    width: min(100vw, 160vh);
+    height: min(62.5vw, 100vh);
+    image-rendering: auto;
+    cursor: crosshair;
+    background: #070716;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="600"></canvas>
+<noscript>NEON VOID needs JavaScript to play.</noscript>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
